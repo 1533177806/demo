@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>马宏博</title>
+</head>
+<style>
+    .getcenter{
+        text-align: center;
+        background-color: crimson;
+    }
+</style>
+<body>
+{% if not user %}
+    <h1 class="getcenter"><a href="/registerView/">注册/登录</a></h1>
+{% else %}
+您已经登录<a href="/accounts/login/">注销</a>
+{% endif %}
+</body>
+</html>
